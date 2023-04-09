@@ -11,3 +11,4 @@ public class Beakjoon_1001{
         System.out.println(a-b);
     }
 }
+
