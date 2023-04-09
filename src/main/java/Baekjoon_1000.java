@@ -5,6 +5,7 @@ public class Baekjoon_1000 {
         int a, b;
         
         Scanner s = new Scanner(System.in);     
+        
         a = s.nextInt();
         b = s.nextInt();
         
