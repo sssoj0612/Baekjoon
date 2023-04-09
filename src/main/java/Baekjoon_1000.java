@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Baekjoon_1000 {
     public static void main(String[]args){
         
-        int a,b;
+        int a, b;
         
         Scanner s = new Scanner(System.in);
         
