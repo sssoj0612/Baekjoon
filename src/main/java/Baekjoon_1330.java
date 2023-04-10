@@ -12,10 +12,10 @@ public class Main {
         if (a>b){
             System.out.println('>');
         }
-        else if (a<b){
-            System.out.println('<');
+            else if (a<b){
+                System.out.println('<');
         }
-        else
-            System.out.println("==");
+                else
+                    System.out.println("==");
     }
 }
