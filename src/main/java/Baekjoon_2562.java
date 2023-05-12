@@ -17,7 +17,6 @@ public class Baekjoon_2562 {
                 index = i+1; // 최댓값이 나타나는 index에 1을 더함
             }
         }
-
         System.out.println(max); // 최댓값 출력
         System.out.print(index); // 최댓값 몇 번째인지 출력
     }
