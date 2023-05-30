@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class Baekjoon_10809 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
