@@ -20,8 +20,8 @@ public class Baekjoon_1157 {
             if (count[i] > max) {
                 max = count[i];
                 result = (char) (i + 'A');
-            } else if (count[i] == max) {
-                result = '?';
+            } else if (count[i] == max) { // 해당 알파벳의 등장수가 max와 같다면
+                result = '?'; // ? 출력
             }
         }
         System.out.println(result);
