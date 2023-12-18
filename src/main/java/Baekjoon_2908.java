@@ -1,26 +1,26 @@
 import java.util.Scanner;
 public class Baekjoon_2908 {
     public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
-                int a = scanner.nextInt();
-                int b = scanner.nextInt();
+        Scanner s = new Scanner(System.in);
 
-                int reversedA = reverseNumber(a);
-                int reversedB = reverseNumber(b);
+        int a = s.nextInt();
+        int b = s.nextInt();
 
-                int result = Math.max(reversedA, reversedB);
+        int ra = reverseNumber(a);
+        int rb = reverseNumber(b);
 
-                System.out.println(result);
-            }
+        int result = Math.max(ra,rb);
 
-            public static int reverseNumber(int num) {
-                int reversedNum = 0;
+        System.out.print(result);
+    }
 
-                while (num != 0) {
-                    reversedNum = reversedNum * 10 + num % 10;
-                    num /= 10;
-                }
+    private static int reverseNumber(int num) {
+        int reversedNum = 0;
 
-                return reversedNum;
-            }
+        while (num != 0){
+            reversedNum = reversedNum * 10 + num % 10;
+            num /= 10;
+        }
+        return reversedNum;
+    }
 }

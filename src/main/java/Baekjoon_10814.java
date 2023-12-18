@@ -21,7 +21,9 @@ class Member implements Comparable<Member> { // Member 클래스 Comparable 인�
     .sort() 메서드는 정렬을 위해 compareTo 메서드를 호출*/
     public int compareTo(Member other) { // Member 객체와 다른 Member 객체를 비교
         return Integer.compare(this.age, other.getAge());
-        // Integer.compare 메서드 : 현재 객체가 다른 객체보다 작으면 음수, 같으면 0, 크면 양수를 반환
+        /* Integer.compare 메서드 : 일반적으로 나이를 기준으로 정렬하는 경우 사용
+        현재 객체가 다른 객체보다 작으면 음수, 같으면 0, 크면 양수를 반환.
+        동일 나이일시 입력 순대로 정렬하기 위해 필요한 메서드. */
     }
 }
 public class Baekjoon_10814 { // 메인 클래스
@@ -37,7 +39,11 @@ public class Baekjoon_10814 { // 메인 클래스
             memberlist.add(new Member(age, name)); // Member 생성된 객체 리스트에 추가
         }
 
-        Collections.sort(memberlist); // 나이순으로 정렬
+        Collections.sort(memberlist);
+        /* 정렬 알고리즘 : 컬렉션 내의 요소들이 Comparable 인터페이스를 구현한 경우,
+        compareTo() 메서드를 사용하여 정렬을 수행 */
+
+
 
         memberlist.forEach( // 정렬된 회원 정보 출력 (람다식)
                 member -> System.out.println

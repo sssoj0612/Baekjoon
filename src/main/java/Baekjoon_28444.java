@@ -21,5 +21,6 @@ public class Baekjoon_28444 {
 
         br.close();
         bw.close();
+
     }
 }

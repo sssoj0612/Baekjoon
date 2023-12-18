@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Baekjoon_18108 {
     public static void main(String[] args) {
 
         int y;
